@@ -10,4 +10,6 @@ jobs:
     steps:
       - name: Print hello
         run: echo "Hello world"
+      - name: Show the date
+        run: date
         
