@@ -12,6 +12,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Show value
+        run:  echo "arn:aws:iam::${{ secrets.AWS_ACCOUNT_ID }}:role/aprudencio-cr-github-role"
       - name: Checkout repository
         uses: actions/checkout@v4
 
